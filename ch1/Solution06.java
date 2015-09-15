@@ -1,4 +1,3 @@
-package Week1;
 
 public class Solution06 {
  //iterate the string s, use variable count to store the number of characters, use variable

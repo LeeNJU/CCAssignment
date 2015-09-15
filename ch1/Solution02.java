@@ -1,5 +1,3 @@
-package Week1;
-
 
 //This solution came from Bangjie Liu. He told me this idea and I implemented it myself
 public class Solution02 {

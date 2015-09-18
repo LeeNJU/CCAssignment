@@ -1,6 +1,4 @@
-import java.util.Scanner ;
-
-
+package Week1;
 public class Solution06 {
  //iterate the string s, use variable count to store the number of characters, use variable
 // current to store characters that we are counting
@@ -31,9 +29,8 @@ public class Solution06 {
 	
 	public static void main(String[] args) 
 	{
-		System.out.println("Please input a string:");
-		Scanner scanner = new Scanner ( System.in );
-		String s = scanner.next ( );
+		String s = "aabddddjjjjjjeeee";
+		System.out.println("the string before compression is :" + s);
 		s = compression ( s );
 		System.out.println("after calling this function: " + s);
 	}

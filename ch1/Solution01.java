@@ -1,6 +1,4 @@
-import java.util.Scanner ;
-
-
+package Week1;
 public class Solution01 {
 
 	public static boolean isUnique(String s)
@@ -18,10 +16,9 @@ public class Solution01 {
 	
 	public static void main(String[] args)
 	{
-		Scanner scanner = new Scanner ( System.in );
-		System.out.println("Please input a string:");
-		String s = scanner.next ( );
-		System.out.println("after calling this function:")
+		String s = "dfadek";
+		System.out.println("the string is: " + s);
+		System.out.print ( "the string is unique or not: " );
 		System.out.println(isUnique(s));
 	}
 }

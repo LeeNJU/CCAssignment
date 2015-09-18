@@ -1,3 +1,4 @@
+package Week1;
 
 import java.util.Arrays;
 import java.util.Scanner ;
@@ -17,10 +18,9 @@ public class Solution09 {
 	
 	public static void main(String[] args) 
 	{
-		Scanner scanner = new Scanner ( System.in );
-		System.out.println("Please input two strings:");
-		String s1 = scanner.next ( );
-		String s2 = scanner.next ( );
+		String s1 = "adjfisdjf";
+		String s2 = "fjdsifjda";
+		System.out.println("the two string is :" + s1 + "   " + s2);
 		System.out.println("result is " + isRotation ( s1 , s2 ));
 	}
 }

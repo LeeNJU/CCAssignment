@@ -1,10 +1,10 @@
-
+package Week1;
 public class Solution03 {
 
 	public static char[] URLify(char[] array, int n )
 	{
 		int count = 0;
-		for(int i = 0; i < array.length; ++i)//calculate the number of spaces in the string
+		for(int i = 0; i < n; ++i)//calculate the number of spaces in the string
 		{
 			if(array[i] == ' ')
 				++count;
@@ -27,8 +27,19 @@ public class Solution03 {
 	
 	public static void main(String[] args) 
 	{
-		char[] array = {'a',' ', 'd', ' ', ' '};
+		char[] array = {'a', ' ', 'd', ' ',' ' , ' ', ' ', ' '};
+		System.out.print ( "the array is :" );
+		for(int i = 0; i < 3; ++i)
+		{
+			System.out.print ( array[i]);
+		}
+		System.out.println();
 		array = URLify ( array , 3 );
-		System.out.println(array);
+		System.out.print("the arrray now is : ");
+		for(int i = 0; i < 5; ++i)
+		{
+			System.out.print ( array[i] );
+		}
+		System.out.println ( );
 	}
 }

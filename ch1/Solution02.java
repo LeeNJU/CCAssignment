@@ -1,6 +1,4 @@
-import java.util.Scanner ;
-
-
+package Week1;
 //This solution came from Bangjie Liu. He told me this idea and I implemented it myself
 public class Solution02 {
 //use a constant array of size 256
@@ -23,10 +21,9 @@ public class Solution02 {
 	
 	public static void main(String[] args)
 	{
-		System.out.println("Please input two strings:")
-		Scanner scanner = new Scanner ( System.in );
-		String s1 = scanner.next ( );
-		String s2 = scanner.next ( );
-		System.out.println("after calling this function:" + isPermutation ( s1 , s2 );)
+		String s1 = "ajdefdxd";
+		String s2 = "addefdxj";
+		System.out.println("the two strings are:" + s1 + "  " + s2);
+		System.out.println("s1 is permutation of s2 or not: " + isPermutation ( s1 , s2 ));
 	}
 }

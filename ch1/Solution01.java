@@ -1,7 +1,4 @@
-package Week1;
-
-import com.sun.java_cup.internal.runtime.Scanner ;
-import com.sun.java_cup.internal.runtime.Symbol ;
+import java.util.Scanner ;
 
 
 public class Solution01 {
@@ -19,5 +16,12 @@ public class Solution01 {
 		return true;
 	}
 	
-	
+	public static void main(String[] args)
+	{
+		Scanner scanner = new Scanner ( System.in );
+		System.out.println("Please input a string:");
+		String s = scanner.next ( );
+		System.out.println("after calling this function:")
+		System.out.println(isUnique(s));
+	}
 }

@@ -1,7 +1,7 @@
 
 public class Solution03 {
 
-	public char[] URLify(char[] array, int n )
+	public static char[] URLify(char[] array, int n )
 	{
 		int count = 0;
 		for(int i = 0; i < array.length; ++i)//calculate the number of spaces in the string
@@ -23,5 +23,12 @@ public class Solution03 {
 			}
 		}
 		return array;
+	}
+	
+	public static void main(String[] args) 
+	{
+		char[] array = {'a',' ', 'd', ' ', ' '};
+		array = URLify ( array , 3 );
+		System.out.println(array);
 	}
 }

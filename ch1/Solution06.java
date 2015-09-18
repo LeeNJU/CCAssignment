@@ -1,8 +1,10 @@
+import java.util.Scanner ;
+
 
 public class Solution06 {
  //iterate the string s, use variable count to store the number of characters, use variable
 // current to store characters that we are counting
-	public String compression(String s)
+	public static String compression(String s)
 	{
 		if(s.isEmpty()) //if s is empty, return s
 			return s;
@@ -25,5 +27,14 @@ public class Solution06 {
 		result += current;
 		result += Integer.toString(count);
 		return result.length() < s.length() ? result : s; 
+	}
+	
+	public static void main(String[] args) 
+	{
+		System.out.println("Please input a string:");
+		Scanner scanner = new Scanner ( System.in );
+		String s = scanner.next ( );
+		s = compression ( s );
+		System.out.println("after calling this function: " + s);
 	}
 }

@@ -1,8 +1,10 @@
+import java.util.Scanner ;
+
 
 //This solution came from Bangjie Liu. He told me this idea and I implemented it myself
 public class Solution02 {
 //use a constant array of size 256
-	public boolean isPermutation(String s1, String s2)
+	public static boolean isPermutation(String s1, String s2)
 	{
 		final int LENGTH = 256;
 		int [] ascii = new int[LENGTH];
@@ -17,5 +19,14 @@ public class Solution02 {
 				return false;
 		
 		return true;
+	}
+	
+	public static void main(String[] args)
+	{
+		System.out.println("Please input two strings:")
+		Scanner scanner = new Scanner ( System.in );
+		String s1 = scanner.next ( );
+		String s2 = scanner.next ( );
+		System.out.println("after calling this function:" + isPermutation ( s1 , s2 );)
 	}
 }

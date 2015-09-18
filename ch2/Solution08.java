@@ -2,7 +2,7 @@ package Week1;
 
 public class Solution08 {
 
-	class ListNode
+	static class ListNode
 	{
 		public int val;
 		public ListNode next;
@@ -12,7 +12,7 @@ public class Solution08 {
 		}
 	}
 	
-	public ListNode detectLoop(ListNode head)
+	public static  ListNode detectLoop(ListNode head)
 	{
 		if(head == null)
 			return head;
@@ -36,5 +36,22 @@ public class Solution08 {
 			}
 		}
 		return null;
+	}
+	
+	public static void main(String[] args)
+	{
+		ListNode p1 = new ListNode ( 0 );
+		ListNode p2 = new ListNode ( 4 );
+		ListNode p3 = new ListNode ( 6 );
+		ListNode p4 = new ListNode ( 12 );
+		ListNode p5 = new ListNode ( 45 );
+		p1.next = p2;
+		p2.next = p3;
+		p3.next = p4;
+		p4.next = p5;
+		p5.next = p3;
+		
+		System.out.println ( "List is :" + p1.val +" " + p2.val + " " + p3.val + " " + p4.val + " " + p5.val + " " + p3.val);
+		System.out.println("loop begins at node :" + detectLoop ( p1 ).val);
 	}
 }

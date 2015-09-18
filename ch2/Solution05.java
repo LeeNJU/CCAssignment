@@ -1,16 +1,18 @@
+package Week1;
 
-class ListNode
-{
-	public int val;
-	public ListNode next;
-	public ListNode ( int value )
-	{
-		this.val = value;
-	}
-}
+
 public class Solution05 {
 
-	public ListNode sumLists ( ListNode list1, ListNode list2)
+	static class ListNode
+	{
+		public int val;
+		public ListNode next;
+		public ListNode ( int value )
+		{
+			this.val = value;
+		}
+	}
+	public static ListNode sumLists ( ListNode list1, ListNode list2)
 	{
 		if(list1 == null) //special cases
 			return list2;
@@ -37,7 +39,7 @@ public class Solution05 {
 		return dummy.next;
 	}
 	
-	private ListNode reverseList(ListNode list) // reverse a list
+	private static ListNode reverseList(ListNode list) // reverse a list
 	{
 		if(list == null || list.next == null)
 			return list;
@@ -55,10 +57,55 @@ public class Solution05 {
 		}
 		return dummy.next;
 	}
-	public ListNode sumListsFollowup(ListNode list1, ListNode list2)
+	
+	public static void printList(ListNode node)
+	{
+		while(node != null)
+		{
+			System.out.print ( node.val + "  " );
+			node = node.next;
+		}
+		System.out.println();
+	}
+	public static ListNode sumListsFollowup(ListNode list1, ListNode list2)
 	{   //reverse list1 and list2, then we can reuse the sumLists function
 		list1 = reverseList ( list1 );
 		list2 = reverseList ( list2 );
 		return sumLists ( list1 , list2 );
+	}
+	
+	public static void main(String[] args)
+	{
+		ListNode p1 = new ListNode ( 7 );
+		ListNode p2 = new ListNode ( 1 );
+		ListNode p3 = new ListNode ( 6 );
+		p1.next = p2;
+		p2.next = p3;
+		
+		ListNode node1 = new ListNode ( 5 );
+		ListNode node2 = new ListNode ( 9 );
+		ListNode node3 = new ListNode ( 2 );
+		node1.next = node2;
+		node2.next = node3;
+		
+		System.out.print("list one is : ");
+		printList ( p1 );
+		System.out.print ( "list two is : ");
+		printList ( node1 );
+		System.out.print ( "the sum is :" );
+		printList ( sumLists ( p1 , node1 ) );
+		System.out.println ( );
+		
+		System.out.println("follow up:");
+		p1 = reverseList ( p1 );
+		node1 = reverseList ( node1 );
+		System.out.print ( "list one is:" );
+		printList ( p1 );
+		System.out.print ( "list two is :" );
+		printList ( node1 );
+		System.out.print("the sum is :");
+		ListNode resultListNode = sumListsFollowup ( p1 , node1 );
+		resultListNode = reverseList ( resultListNode );
+		printList ( resultListNode );
 	}
 }

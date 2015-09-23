@@ -6,6 +6,7 @@ import java.util.Stack ;
 
 public class Solution05 {
 //inorder traveral of binary search tree and check it is a valid binary tree
+	//passed on leetcode
 	static class TreeNode
 	{
 		int val;
@@ -48,5 +49,15 @@ public class Solution05 {
 			}
 		}
 		return true;
+	}
+	
+	public static void main(String[] args)
+	{
+		TreeNode node1 = new TreeNode ( 4 );
+		TreeNode node2 = new TreeNode ( 0 );
+		TreeNode node3 = new TreeNode ( 8 );
+		node1.left = node2;
+		node1.right = node3;
+		System.out.println("is this a valid binary search tree :" + validateBST ( node1 ));
 	}
 }

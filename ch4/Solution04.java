@@ -33,4 +33,10 @@ public class Solution04 {
 		
 		return checkBalanced ( root.left ) && checkBalanced ( root.right );
 	}
+	
+	public static void main(String[] args)
+	{
+		TreeNode node1 = new TreeNode ( 0 );
+		System.out.println("Is balanced or not : " + checkBalanced ( node1 ));
+	}
 }

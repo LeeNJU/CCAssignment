@@ -32,4 +32,14 @@ public class Solution06 {
 			return node.parent;
 		}
 	}
+	
+	public static void main(String[] args)
+	{
+		TreeNode node1 = new TreeNode ( 4 );
+		TreeNode node2 = new TreeNode ( 2 );
+		TreeNode node3 = new TreeNode ( 8 );
+		node1.left = node2;
+		node1.right = node3;
+		System.out.println("The successor of node1 is :" +successor ( node1 ).val);
+	}
 }

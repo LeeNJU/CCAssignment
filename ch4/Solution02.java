@@ -30,4 +30,20 @@ public class Solution02 {
 	{
 		return buildTree ( array , 0 , array.length - 1 );
 	}
+	
+	public static void print(TreeNode root)
+	{
+		if(root == null)
+			return;
+		print ( root.left );
+		System.out.print ( root.val + "  " );
+		print ( root.right );
+	}
+	
+	public static void main(String[] args)
+	{
+		int[] array = {1, 3,4,8, 43,56};
+		TreeNode root = minimalTree ( array );
+		print ( root );
+	}
 }

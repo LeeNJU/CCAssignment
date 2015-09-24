@@ -5,13 +5,13 @@ import java.util.Stack ;
 public class Solution04 {
 	private Stack<Integer> s1 = new Stack<Integer>();
 	private Stack<Integer> s2 = new Stack<Integer>();
-	
+	//I took the idea from the book
 	 public void push(int x) {
 	        s1.add ( x );
 	    }
 
 	    // Removes the element from in front of queue.
-	    public void pop() {
+	 public void pop() {
 	        if(s2.isEmpty ( ))
 	        {
 	        	while(!s1.isEmpty ( ))
@@ -22,7 +22,8 @@ public class Solution04 {
 	        }
 	        s2.pop ( );
 	    }
-
+	    
+	    
 	    // Get the front element.
 	    public int peek() {
 	        if(s2.isEmpty ( ))
@@ -38,7 +39,7 @@ public class Solution04 {
 
 	    // Return whether the queue is empty.
 	    public boolean empty() {
-	        return s1.isEmpty ( ) && s2.isEmpty ( );
+	        return s1.isEmpty() && s2.isEmpty ( );
 	    }
 	    
 	    public static void main(String[] args)

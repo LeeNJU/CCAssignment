@@ -5,7 +5,7 @@ import java.util.Queue ;
 
 class Animal // comes from the book
 {
-	int order;
+	private int order;
 	public void setOrder(int o)
 	{
 		order = o;

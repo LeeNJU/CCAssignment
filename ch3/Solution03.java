@@ -14,8 +14,13 @@ public class Solution03 {
 	
 	public int pop()
 	{
+		if(s.isEmpty ( ))
+			return Integer.MAX_VALUE;
+		
 		int result = s.get ( s.size() - 1 ).peek ( );
 		s.get ( s.size() - 1 ).pop ( );
+		if(s.get ( s.size() - 1 ).isEmpty ( ))
+			s.remove ( s.size() - 1 );
 		return result;
 	}
 	public void push(int value)

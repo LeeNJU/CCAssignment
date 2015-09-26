@@ -1,0 +1,5 @@
+We know that this file is 20GB, much larger than the memory of our computer. So we divide this 
+file into n parts, the size of every part is m and m is less then the memory of our computer.  
+It's clear that 20GB = n * m. Then we load every part into our memory, sort it and save it
+into a single file.  After every part is sorted, we get n single files.  Then we do mergeSort on
+every two single files.  Then we can sort this file of 20GB.

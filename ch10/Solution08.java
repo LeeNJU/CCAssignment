@@ -3,7 +3,7 @@ package Ch10;
 import java.util.BitSet ;
 
 public class Solution08 {
-
+//I looked at the solution in the book and I use BitSet
 	public static void findDuplicates(int[] array, int n)
 	{
 		BitSet set = new BitSet(32000);

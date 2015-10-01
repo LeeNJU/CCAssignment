@@ -2,7 +2,7 @@ package Ch10;
 
 import java.util.Arrays ;
 public class Solution11 {
-
+//I looked at the solution of the book
 	public static void peaksAndValleys(int[] array, int n)
 	{
 		Arrays.sort ( array );

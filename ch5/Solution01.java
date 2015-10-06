@@ -8,7 +8,7 @@ public class Solution01 {
 		int number = 1;
 		number = number << i;
 		int max = Integer.MAX_VALUE;
-		for(int index = i; index < j; ++index)
+		for(int index = i; index < j; ++index)//transform bit i to bit j to 0
 		{
 			max ^= number;
 			number = number << 1;

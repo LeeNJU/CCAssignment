@@ -5,17 +5,17 @@ public class Solution02 {
 	public static String convertDecimalToBinary(float num)
 	{
 		String result = "";
-		while(num != (float)0.0 && result.length ( ) < 24)
+		while(num != (float)0.0 && result.length ( ) < 24)// convert it to binary
 		{
 			num *= 2;
 			int t = (int)num;
 			result += Integer.toString ( t );
 			num -= t;
 		}
-		if(num != 0 && result.length ( ) >= 24)
+		if(num != 0 && result.length ( ) >= 24) // the number can not be accurately represented
 			return "ERROR";
 		
-		if(result.length ( ) < 24)
+		if(result.length ( ) < 24) // add all the trailing 0 to the number
 		{
 			int k = 24 - result.length ( );
 			while(k > 0)
@@ -46,7 +46,7 @@ public class Solution02 {
 		if(s.length ( ) < 24)
 		{
 			int k = 24 - s.length ( );
-			while(k > 0)
+			while(k > 0)// add trailing 0
 			{
 				--k;
 				s += "0";

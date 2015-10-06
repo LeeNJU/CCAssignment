@@ -1,7 +1,7 @@
 package Ch5;
 
 public class Solution03 {
-
+// I looked at the solution in the book
 	public static int flipBitToWin(int num)
 	{
 		int max_length = 0;

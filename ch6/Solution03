@@ -1,0 +1,9 @@
+ //I looked at the solution in the book
+ This is impossible. Next we are going to prove it. For a 8 * 8 chessboard, there are 64 squares
+ in the chessboard. Then we color every square with black color or white color,such that every 
+ adjacent squares don't have the same color. Then we will get 32 black colors and 32 white colors.
+ If we remove two diagonally opposite corners,these two squares must be the same color. Let's 
+ suppose these two corners are white. So now we have 32 black squares and 30 white squares.
+ We know that every domino will cover a black square and a white square. So we need 31 black squares
+ and 31 white squares. However, we only have 32 black squares and 30 white squares. So it is 
+ impossible. 

@@ -1,0 +1,11 @@
+//I looked at the solution in the book
+Let's take the 10th door as an example to analyze this problem. At round 1, the 10th door will be
+toggled and it's open. At round 2, the 10th door will be toggled again and it will be closed.
+At round 5, the 10th door will be toggled and it's open. At round 10, the 10th door will be toggled
+and it will be closed. Then we can conclude that door i will be toggled for every factor of i.
+And the number of factors will be odd if door i is going to be open. So we only need to find out
+all the numbers which have odd number of factors. Here is a simple way to find all the numbers.
+The number which has odd number of factors has to be a square number. Let's take 16 as an example.
+We know that 16 = 1 * 16 = 2 * 8 = 4 * 4. So only the square numbers have odd number of factors.
+So we need to find all the square numbers from i to 100, which is quite easy. These numbers are
+1, 4, 9,16,25,36,49,64,81,100. So we know that there will be 10 doors left open after 100 passes.

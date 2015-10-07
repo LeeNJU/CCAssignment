@@ -1,0 +1,9 @@
+For game 1: the probability to make the hoop is obviously p
+For game 2: there are 4 cases to make two of the three shots. Case 1 is that I make the first two
+            shots, the probability is p * p * (1 - p), case 2 is that I make the first and the 
+            last shots, the probability is p * (1 - p) * p, case 3 is that I make the last two 
+            shots and the probability is (1 - p) * p * p, case 4 is that I make three shots and
+            the probability is p^3. So the probability to make two shots is 3(1-p)p^2 + p^3.
+So we let p > 3(1-p)p^2 + p^3, (2p - 1) * (p - 1) > 0. Then we know that if 0.5 < p < 1, we 
+should pick Game 2. If 0 < p < 0.5, we should pick Game 1. If p = 0, 0.5 or 1, the probability 
+is the same. You can pick Game 1 or Game 2.

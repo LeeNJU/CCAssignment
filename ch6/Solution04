@@ -1,0 +1,9 @@
+//I looked at the solution in the book
+if these three ants move in the same direction, they will never collide with each other because their
+speed is the same. So they can move in clockwise or unclockwise direction to make sure that they
+don't collide with each other.  The probability that they all move in clockwise direction is
+(1/2)^3, the probability that they all move in unclockwise direction is also (1/2)^3, so the probability
+that they collide is 1 - 2 * (1/2)^3 = 3/4
+
+In the situation of n ants in an n-vertex polygon, the probability that they move in the same direction
+is that 2 * (1/2)^n, so the probability that they won't collide is 1 - 2 * (1/2)^n

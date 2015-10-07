@@ -1,0 +1,6 @@
+//I looked at the solution in the book
+We pick 1 pill from bottle 1, 2 pills from bottle 2, 3 pills from bottle 3,...,n pills from 
+bottle n. Then the expected weight of these pills will be 1. If bottle n has pills of weight 
+1.1 grams. Then total weight of these pills will be (1 + 2 + 3 + ... + 20) + n * 1.1 = 210 + 1.1n.
+n is the bottle we want to find. So we use total to represent the total weight of these pills,
+then we can compute n = (total - 210) / 1.1. 

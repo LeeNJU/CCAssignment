@@ -1,0 +1,15 @@
+//I looked at the solution in the book
+If there is only one person who has blue eyes, it will take one day for this person to leave.
+Because this person can see the color of other people's eyes, other people don't have blue eyes,
+then this person knows that he has blue eyes.
+If there are two person who have blue eyes, they can see the color of each other's eyes but they
+don't know their own color. They know that if there is only one person who has blue eyes.this
+person will leave on the first night. If the other person is still at the island on the second 
+night, the person will know that he has blue eyes too. So is the other person. So they will both
+leave the island on the second night.
+If there are more than two persons who have blue eyes, let's suppose that the number of blue eyes
+person is n and n > 2. If there are 3 person, it will take 3 nights for the third person to know
+that he has blue eyes because he can see that the other two persons are still at the island on 
+the third night. Then the third person will leave at the third night. In the same way, it will take
+4 nights for the fourth person to know that he has blue eyes and so on. Then we know that if there
+are n persons who have blue eyes, it will take n nights for these persons to leave. 

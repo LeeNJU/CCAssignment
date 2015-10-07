@@ -1,0 +1,4 @@
+First we drop an egg from every Nth floor(n is even). For example, we first drop an egg from 2nd
+floor, if the egg does not break, then we drop this egg from the 4th floor etc. If we drop this 
+egg from nth floor and it breaks(n is even), we drop another egg from the (n - 1)th floor to see
+if it breaks. If it breaks, we can find that N is n - 1. If it does not break, N is n.
